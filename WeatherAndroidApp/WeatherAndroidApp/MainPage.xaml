@@ -6,9 +6,12 @@
 
     <StackLayout>
         <Entry x:Name="cityEntry"></Entry>
-        <Button x:Name="searchCity" Clicked="OnButtonWeatherClicked"></Button>
-        <Label Text="Temperature" />
-        <Label Text="{Binding Main.Temperature}" />
+        <Button x:Name="searchCity" Text="Search by city" Clicked="OnButtonWeatherClicked"></Button>
+        <Label Text="Location"/>
+        <Label Text="{Binding _name}"/>
+
+        <Label Text="Temperature"/>
+        <Label Text="{Binding _main._temperature}" />
     </StackLayout>
 
 </ContentPage>

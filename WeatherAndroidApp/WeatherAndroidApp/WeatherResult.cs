@@ -4,7 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 
 namespace WeatherAndroidApp
-{
+{   
     public class WeatherResult
     {
         [JsonProperty("name")]
