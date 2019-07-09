@@ -13,11 +13,12 @@
         <Label Text="Temperature"/>
         <Label Text="{Binding _main._temperature}" />
         <Label Text="Icon source"/>
-        <Label Text="{Binding _weather[0]._icon}" />
+        <Label x:Name="test"/>
+        <Label Text="{Binding ImageURI}" />
         <StackLayout HorizontalOptions="EndAndExpand">
-            <Image Source="{Binding _weather[0]._icon}"
-                   WidthRequest="30"
-                   HeightRequest="30"/>
+            <Image x:Name="WeatherIcon"
+                   WidthRequest="230"
+                   HeightRequest="230"/>
         </StackLayout>
     </StackLayout>
 
