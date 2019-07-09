@@ -14,7 +14,7 @@ namespace WeatherAndroidApp
         public Coord _coord { get; set; }
 
         [JsonProperty("weather")]
-        public Weather[] _weather { get; set; }
+        public List<Weather> _weather { get; set; }
 
         [JsonProperty("base")]
         public string _base { get; set; }
@@ -114,6 +114,5 @@ namespace WeatherAndroidApp
         [JsonProperty("icon")]
         public string _icon { get; set; }
     }
-
 
 }

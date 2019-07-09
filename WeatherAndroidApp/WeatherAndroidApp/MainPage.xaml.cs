@@ -18,6 +18,7 @@ namespace WeatherAndroidApp
             InitializeComponent();
             httpClient = new HTTPClient();
         }
+        
 
         async void OnButtonWeatherClicked(object sender, EventArgs e)
         {

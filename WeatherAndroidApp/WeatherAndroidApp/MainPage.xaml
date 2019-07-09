@@ -12,6 +12,13 @@
 
         <Label Text="Temperature"/>
         <Label Text="{Binding _main._temperature}" />
+        <Label Text="Icon source"/>
+        <Label Text="{Binding _weather[0]._icon}" />
+        <StackLayout HorizontalOptions="EndAndExpand">
+            <Image Source="{Binding _weather[0]._icon}"
+                   WidthRequest="30"
+                   HeightRequest="30"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
