@@ -5,7 +5,7 @@
              x:Class="WeatherAndroidApp.MainPage">
 
     <StackLayout>
-        <Grid>
+        <Grid BackgroundColor="#3F7EDA">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -14,13 +14,10 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="5*" />
             </Grid.ColumnDefinitions>
-            <Label HorizontalOptions="CenterAndExpand" XAlign="End" YAlign="End" FontSize="32" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Text="City: "></Label>
-            <Entry Grid.Row="0" Grid.Column="1" x:Name="cityEntry"></Entry>
+            <Label TextColor="WhiteSmoke" HorizontalOptions="CenterAndExpand" XAlign="End" YAlign="End" FontSize="32" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Text="City: "></Label>
+            <Entry TextColor="WhiteSmoke" Grid.Row="0" Grid.Column="1" x:Name="cityEntry"></Entry>
             <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="searchCity" Text="Search by city" Clicked="OnButtonWeatherClicked"></Button>
         </Grid>
-
-        <!--<Entry  x:Name="cityEntry"></Entry>
-        <Button x:Name="searchCity" Text="Search by city" Clicked="OnButtonWeatherClicked"></Button>-->
 
         <Label Text="Location"/>
         <Label Text="{Binding _name}"/>
@@ -37,8 +34,23 @@
         </StackLayout>
         <Label Text="Temp Min"/>
         <Label Text="{Binding _main._tempMin}" />
-        <Label Text="Temp Max"/>
-        <Label Text="{Binding _main._tempMax}" />
+        <Label Text="Forecast"/>
+        <Label Text="{Binding cod}" />
+
+        <Grid VerticalOptions="EndAndExpand" BackgroundColor="#3F7EDA">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Text="Actual weather"></Button>
+            <Button Grid.Column="1" Text="5 days forecast"></Button>
+        </Grid>
+        
+        
+        
     </StackLayout>
 
 </ContentPage>

@@ -27,5 +27,16 @@ namespace WeatherAndroidApp
             }
             return weatherResult;
         }
+        public async Task<ForecastResult> GetForecastProperties(string cityWeather)
+        {
+            ForecastResult forecastResult = null;
+            var temp = await httpClient.GetAsync(cityWeather);
+            if (temp.IsSuccessStatusCode)
+            {
+                var responseData = await temp.Content.ReadAsStringAsync();
+                forecastResult = JsonConvert.DeserializeObject<ForecastResult>(responseData);
+            }
+            return forecastResult;
+        }
     }
 }
