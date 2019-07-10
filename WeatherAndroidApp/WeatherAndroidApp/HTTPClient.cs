@@ -38,5 +38,6 @@ namespace WeatherAndroidApp
             }
             return forecastResult;
         }
+
     }
 }

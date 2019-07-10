@@ -39,7 +39,7 @@ namespace WeatherAndroidApp
         public double temp_kf { get; set; }
     }
 
-    
+
     public class CloudsForecast
     {
         [JsonProperty("all")]
@@ -73,7 +73,7 @@ namespace WeatherAndroidApp
         [JsonProperty("main")]
         public MainForecast main { get; set; }
         [JsonProperty("weather")]
-        public List<WeatherForecast> weather { get; set; }
+        public List<WeatherForecast> weatherList { get; set; }
         [JsonProperty("clouds")]
         public CloudsForecast clouds { get; set; }
         [JsonProperty("wind")]
@@ -117,4 +117,6 @@ namespace WeatherAndroidApp
         public Coord coord { get; set; }
     }
 
-}    
+}
+
+
