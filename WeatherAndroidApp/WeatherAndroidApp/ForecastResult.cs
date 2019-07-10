@@ -39,18 +39,7 @@ namespace WeatherAndroidApp
         public double temp_kf { get; set; }
     }
 
-    public class WeatherForecast
-    {
-        [JsonProperty("id")]
-        public int id { get; set; }
-        [JsonProperty("main")]
-        public string main { get; set; }
-        [JsonProperty("description")]
-        public string description { get; set; }
-        [JsonProperty("icon")]
-        public string icon { get; set; }
-    }
-
+    
     public class CloudsForecast
     {
         [JsonProperty("all")]
@@ -96,6 +85,19 @@ namespace WeatherAndroidApp
         [JsonProperty("dt_txt")]
         public string dt_txt { get; set; }
     }
+
+    public class WeatherForecast
+    {
+        [JsonProperty("id")]
+        public int id { get; set; }
+        [JsonProperty("main")]
+        public string main { get; set; }
+        [JsonProperty("description")]
+        public string description { get; set; }
+        [JsonProperty("icon")]
+        public string icon { get; set; }
+    }
+
 
     public class CoordForecast
     {
