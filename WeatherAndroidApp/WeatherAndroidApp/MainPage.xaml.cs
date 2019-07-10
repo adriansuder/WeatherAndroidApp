@@ -24,10 +24,10 @@ namespace WeatherAndroidApp
             if (!string.IsNullOrWhiteSpace(cityEntry.Text))
             { 
                 var city = cityEntry.Text;
-                WeatherResult weatherResult = await httpClient.GetWeatherProperties(API_LINK + city + "&APPID=" + API_KEY);
+                WeatherResult weatherResult = await httpClient.GetWeatherProperties(API_LINK + city + "&units=metric&APPID=" + API_KEY);
                 BindingContext = weatherResult;
-                WeatherIcon.Source = "http://openweathermap.org/img/w/" + weatherResult._weather[0]._icon + ".png";
-                test.Text = "http://openweathermap.org/img/w/" + weatherResult._weather[0]._icon + ".png";
+                WeatherIcon.Source = "http://openweathermap.org/img/wn/" + weatherResult._weather[0]._icon + "@2x.png";
+                //test.Text = "http://openweathermap.org/img/w/" + weatherResult._weather[0]._icon + ".png";
             }
         }
         
