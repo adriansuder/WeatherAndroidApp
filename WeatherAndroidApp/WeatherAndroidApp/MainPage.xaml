@@ -20,7 +20,7 @@
         </Grid>
         <ScrollView>
             <StackLayout>
-            <Grid x:Name="gridWeather" IsVisible="false" BackgroundColor="AliceBlue">
+            <Grid  x:Name="gridWeather" IsVisible="false" BackgroundColor="AliceBlue">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
@@ -37,10 +37,8 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="{Binding _name}" FontSize="48" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" XAlign="Center" YAlign="Center" />
-                <StackLayout Grid.Column="1" Grid.Row="1" HorizontalOptions="CenterAndExpand">
-                    <Image x:Name="WeatherIcon"
-                   WidthRequest="100"
-                   HeightRequest="100"/>
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
                 </StackLayout>
                 <Label Text="{Binding _weather[0]._description}" FontSize="30" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" XAlign="Center" YAlign="Center"/>
                 <Label Text="Min. temp. °C" FontSize="20" Grid.Column="0" Grid.Row="4" Grid.RowSpan="1" HorizontalOptions="CenterAndExpand"/>
@@ -58,10 +56,8 @@
                 <Label Text="{Binding _wind._speed}" FontSize="28" Grid.Column="2" Grid.Row="7" Grid.RowSpan="1" HorizontalOptions="CenterAndExpand"/>
             </Grid>
              <!--Grid z Prognozą pogody -->
-            <Grid x:Name="gridForecast" IsVisible="false">
-                    <!--<Label Text="działa"></Label>
-                    <Label Text="{Binding list[0].weatherList[0].icon}"></Label>-->
-                    <Grid.RowDefinitions>
+                <Grid x:Name="gridForecast" IsVisible="false">  
+                    <!--<Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
@@ -95,7 +91,7 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+                    </Grid.ColumnDefinitions>-->
                     <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[0].dt_txt}" VerticalOptions="Center"></Label>
                     <Label Grid.Row="0" Grid.Column="1" Text="Temp. °C"></Label>
                     <Label Grid.Row="1" Grid.Column="1" Text="{Binding list[0].main.temp}"></Label>
