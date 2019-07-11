@@ -69,6 +69,25 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -77,7 +96,7 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="Tommorow" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[0].dt_txt}" VerticalOptions="Center"></Label>
                     <Label Grid.Row="0" Grid.Column="1" Text="Temp. °C"></Label>
                     <Label Grid.Row="1" Grid.Column="1" Text="{Binding list[0].main.temp}"></Label>
                     <Label Grid.Row="0" Grid.Column="2" Text="Wind km/h"></Label>
@@ -87,7 +106,7 @@
                         <Image x:Name="WeatherIcon1" WidthRequest="50" HeightRequest="50"/>
                     </StackLayout>
 
-                    <Label Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Text="Tommorow + 1" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[1].dt_txt}" VerticalOptions="Center"></Label>
                     <Label Grid.Row="2" Grid.Column="1" Text="Temp. °C"></Label>
                     <Label Grid.Row="3" Grid.Column="1" Text="{Binding list[1].main.temp}"></Label>
                     <Label Grid.Row="2" Grid.Column="2" Text="Wind km/h"></Label>
@@ -97,7 +116,125 @@
                         <Image x:Name="WeatherIcon2" WidthRequest="50" HeightRequest="50"/>
                     </StackLayout>
 
+                    <Label Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[2].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="4" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding list[2].main.temp}"></Label>
+                    <Label Grid.Row="4" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="5" Grid.Column="2" Text="{Binding list[2].wind.speed}"></Label>
+                    <Label Grid.Row="4" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[2].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon3" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
 
+                    <Label Grid.Row="6" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[3].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="6" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="7" Grid.Column="1" Text="{Binding list[3].main.temp}"></Label>
+                    <Label Grid.Row="6" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="7" Grid.Column="2" Text="{Binding list[3].wind.speed}"></Label>
+                    <Label Grid.Row="6" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[3].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="6" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon4" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="8" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[4].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="8" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="9" Grid.Column="1" Text="{Binding list[4].main.temp}"></Label>
+                    <Label Grid.Row="8" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="9" Grid.Column="2" Text="{Binding list[4].wind.speed}"></Label>
+                    <Label Grid.Row="8" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[4].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="8" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon5" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="10" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[5].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="10" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="11" Grid.Column="1" Text="{Binding list[5].main.temp}"></Label>
+                    <Label Grid.Row="10" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="11" Grid.Column="2" Text="{Binding list[5].wind.speed}"></Label>
+                    <Label Grid.Row="10" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[5].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="10" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon6" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="12" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[6].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="12" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="13" Grid.Column="1" Text="{Binding list[6].main.temp}"></Label>
+                    <Label Grid.Row="12" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="13" Grid.Column="2" Text="{Binding list[6].wind.speed}"></Label>
+                    <Label Grid.Row="12" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[6].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="12" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon7" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="14" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[7].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="14" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="15" Grid.Column="1" Text="{Binding list[7].main.temp}"></Label>
+                    <Label Grid.Row="14" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="15" Grid.Column="2" Text="{Binding list[7].wind.speed}"></Label>
+                    <Label Grid.Row="14" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[7].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="14" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon8" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="16" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[8].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="16" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="17" Grid.Column="1" Text="{Binding list[8].main.temp}"></Label>
+                    <Label Grid.Row="16" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="17" Grid.Column="2" Text="{Binding list[8].wind.speed}"></Label>
+                    <Label Grid.Row="16" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[8].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="16" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon9" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="18" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[9].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="18" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="19" Grid.Column="1" Text="{Binding list[9].main.temp}"></Label>
+                    <Label Grid.Row="18" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="19" Grid.Column="2" Text="{Binding list[9].wind.speed}"></Label>
+                    <Label Grid.Row="18" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[9].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="18" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon10" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="20" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[10].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="20" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="21" Grid.Column="1" Text="{Binding list[10].main.temp}"></Label>
+                    <Label Grid.Row="20" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="21" Grid.Column="2" Text="{Binding list[10].wind.speed}"></Label>
+                    <Label Grid.Row="20" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[10].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="20" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon11" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="22" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[11].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="22" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="23" Grid.Column="1" Text="{Binding list[11].main.temp}"></Label>
+                    <Label Grid.Row="22" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="23" Grid.Column="2" Text="{Binding list[11].wind.speed}"></Label>
+                    <Label Grid.Row="22" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[11].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="22" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon12" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="24" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[12].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="24" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="25" Grid.Column="1" Text="{Binding list[12].main.temp}"></Label>
+                    <Label Grid.Row="24" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="25" Grid.Column="2" Text="{Binding list[12].wind.speed}"></Label>
+                    <Label Grid.Row="24" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[12].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="24" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon13" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
+
+                    <Label Grid.Row="26" Grid.Column="0" Grid.RowSpan="2" Text="{Binding list[13].dt_txt}" VerticalOptions="Center"></Label>
+                    <Label Grid.Row="26" Grid.Column="1" Text="Temp. °C"></Label>
+                    <Label Grid.Row="27" Grid.Column="1" Text="{Binding list[13].main.temp}"></Label>
+                    <Label Grid.Row="26" Grid.Column="2" Text="Wind km/h"></Label>
+                    <Label Grid.Row="27" Grid.Column="2" Text="{Binding list[13].wind.speed}"></Label>
+                    <Label Grid.Row="26" Grid.Column="4" Grid.RowSpan="2"  VerticalOptions="Center" Text="{Binding list[13].weatherList[0].description}"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="26" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="WeatherIcon14" WidthRequest="50" HeightRequest="50"/>
+                    </StackLayout>
 
                 </Grid>
             </StackLayout>
@@ -111,7 +248,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Grid.ColumnSpan="2" Text="3 days weather forecast" Clicked="OnButtonForecastClicked"></Button>
+            <Button Grid.Column="0" Grid.ColumnSpan="2" Text="Hourly weather forecast" Clicked="OnButtonForecastClicked"></Button>
         </Grid>
     </StackLayout>
 </ContentPage>

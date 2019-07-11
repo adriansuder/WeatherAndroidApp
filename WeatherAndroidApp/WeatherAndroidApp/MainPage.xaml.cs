@@ -42,6 +42,18 @@ namespace WeatherAndroidApp
                 BindingContext = forecastResult;
                 WeatherIcon1.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[0].weatherList[0].icon + "@2x.png";
                 WeatherIcon2.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[1].weatherList[0].icon + "@2x.png";
+                WeatherIcon3.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[2].weatherList[0].icon + "@2x.png";
+                WeatherIcon4.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[3].weatherList[0].icon + "@2x.png";
+                WeatherIcon5.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[4].weatherList[0].icon + "@2x.png";
+                WeatherIcon6.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[5].weatherList[0].icon + "@2x.png";
+                WeatherIcon7.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[6].weatherList[0].icon + "@2x.png";
+                WeatherIcon8.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[7].weatherList[0].icon + "@2x.png";
+                WeatherIcon9.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[8].weatherList[0].icon + "@2x.png";
+                WeatherIcon10.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[9].weatherList[0].icon + "@2x.png";
+                WeatherIcon11.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[10].weatherList[0].icon + "@2x.png";
+                WeatherIcon12.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[11].weatherList[0].icon + "@2x.png";
+                WeatherIcon13.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[12].weatherList[0].icon + "@2x.png";
+                WeatherIcon14.Source = "http://openweathermap.org/img/wn/" + forecastResult.list[13].weatherList[0].icon + "@2x.png";
                 if (gridWeather.IsVisible == true) { gridWeather.IsVisible = false; }
                 if (gridForecast.IsVisible == false) { gridForecast.IsVisible = true; }
             }
